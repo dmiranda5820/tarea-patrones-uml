@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reportar animal | Sistema de Rescate y Adopción Animal</title>
+</head>
+<body>
+  <header>
+    <h1>Sistema de Control de Rescate y Adopción Animal</h1>
+    <nav aria-label="Menú principal">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="reportar.html">Reportar animal</a></li>
+        <li><a href="rescates.html">Casos registrados</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Reportar un animal rescatado</h2>
+      <form action="rescates.html" method="get">
+
+        <fieldset>
+          <legend>Datos del caso</legend>
+          <p>
+            <label for="titulo">Título del caso o nombre provisional *</label><br>
+            <input type="text" id="titulo" name="titulo" required minlength="3">
+          </p>
+          <p>
+            <label for="categoria">Categoría *</label><br>
+            <select id="categoria" name="categoria" required>
+              <option value="">-- Seleccione --</option>
+              <option value="perro">Perros</option>
+              <option value="gato">Gatos</option>
+              <option value="fauna-silvestre">Fauna Silvestre</option>
+            </select>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Nivel de urgencia médica *</legend>
+          <p>
+            <input type="radio" id="alta" name="urgencia" value="alta" required>
+            <label for="alta">Alta</label>
+          </p>
+          <p>
+            <input type="radio" id="media" name="urgencia" value="media">
+            <label for="media">Media</label>
+          </p>
+          <p>
+            <input type="radio" id="baja" name="urgencia" value="baja">
+            <label for="baja">Baja</label>
+          </p>
+        </fieldset>
+
+        <p>
+          <label for="descripcion">Descripción del estado en que se encontró *</label><br>
+          <textarea id="descripcion" name="descripcion" rows="6" cols="50" required></textarea>
+        </p>
+
+        <p>
+          <button type="submit">Enviar reporte</button>
+          <button type="reset">Limpiar</button>
+        </p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p><small>&copy; 2026 Su nombre - UTM Online. Proyecto académico.</small></p>
+  </footer>
+</body>
+</html>
