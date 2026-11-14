@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Listado de casos de rescate registrados">
+  <title>Casos registrados | Sistema de Rescate y Adopción Animal</title>
+</head>
+<body>
+  <header>
+    <img src="assets/img/logo.svg" alt="Logo del refugio: huella de animal" width="64" height="64">
+    <h1>Sistema de Control de Rescate y Adopción Animal</h1>
+    <nav aria-label="Menú principal">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="reportar.html">Reportar animal</a></li>
+        <li><a href="rescates.html">Casos registrados</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section aria-labelledby="listado">
+      <h2 id="listado">Casos de rescate registrados</h2>
+      <table>
+        <caption>Casos registrados en el refugio</caption>
+        <thead>
+          <tr>
+            <th scope="col">Código</th>
+            <th scope="col">Nombre provisional</th>
+            <th scope="col">Categoría</th>
+            <th scope="col">Urgencia</th>
+            <th scope="col">Estado</th>
+            <th scope="col">Responsable</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">CR-001</th>
+            <td>Perro herido en la Av. Principal</td>
+            <td>Perro</td>
+            <td>Alta</td>
+            <td>En tratamiento</td>
+            <td>Veterinario asignado</td>
+          </tr>
+          <tr>
+            <th scope="row">CR-002</th>
+            <td>Gatita en la azotea</td>
+            <td>Gato</td>
+            <td>Media</td>
+            <td>Reportado</td>
+            <td>Sin asignar</td>
+          </tr>
+          <tr>
+            <th scope="row">CR-003</th>
+            <td>Iguana en patio</td>
+            <td>Fauna Silvestre</td>
+            <td>Baja</td>
+            <td>Rescatado</td>
+            <td>Voluntario asignado</td>
+          </tr>
+          <tr>
+            <th scope="row">CR-004</th>
+            <td>Cachorro Max</td>
+            <td>Perro</td>
+            <td>Baja</td>
+            <td>En adopción</td>
+            <td>Administrador</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section aria-labelledby="estados">
+      <h2 id="estados">Estados del proceso</h2>
+      <article>
+        <h3>Flujo de un caso</h3>
+        <ol>
+          <li>Reportado</li>
+          <li>Rescatado</li>
+          <li>En tratamiento</li>
+          <li>En adopción</li>
+        </ol>
+      </article>
+      <p><a href="reportar.html">Registrar un nuevo caso</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Contacto: <a href="mailto:refugio@example.com">refugio@example.com</a> | Tel. 04-000-0000</p>
+    <p><small>&copy; 2026 Diego Mauricio Miranda Zambrano - UTM Online. Proyecto académico.</small></p>
+  </footer>
+</body>
+</html>
